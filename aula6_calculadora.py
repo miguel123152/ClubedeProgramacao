@@ -14,8 +14,6 @@ def divisao(val1,val2):
     resultado=val1/val2
     print(resultado)
 
-
-
 while 1:
     num1=int(input('Qual o primeiro número?'))
 
@@ -24,10 +22,7 @@ while 1:
     sinal=input('Qual a operação?').lower()
     if num2==0 and sinal==('divisao') or sinal==('/'):
         print('Erro. Impossível dividir por zero.')
-        if (input('Usar novamente?').lower())==('sim').lower():
-            continue
-        else:
-            break
+    
     if sinal==("soma") or sinal==("+"):
         soma(num1,num2)
         
@@ -42,6 +37,6 @@ while 1:
   
     else:  
         print ('Inválido')
+        
     if (input('Usar novamente?').lower())=='nao':
         break
-        
